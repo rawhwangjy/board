@@ -1,0 +1,42 @@
+<div class="board_wrap write">
+    <h1>Board</h1>
+    <div class="board">
+        <form action="{{action}}{{_id}}?_method={{method}}" method="post">
+            <fieldset>
+                <table>
+                    <colgroup>
+                        <col class="col_width01" />
+                        <col class="col_width02" />
+                        <col class="col_width03" />
+                        <col class="col_width04" />
+                        <col class="col_width06" />
+                        <col class="col_width06" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Name</th>
+                            <td><input type="text" name="name" value="{{name}}"></td>
+                            <th scope="row">Date</th>
+                            <td>{{date}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Title</th>
+                            <td colspan="3">
+                                <div class="view_tit"><input type="text" name="title" value="{{title}}"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Content</th>
+                            <td colspan="3">
+                                <div class="view_con"><textarea name="content" id="" cols="30" rows="10">{{content}}</textarea></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_wrap">
+                    <input type="submit" class="btn confirm" value="확인">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

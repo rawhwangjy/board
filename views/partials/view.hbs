@@ -1,0 +1,40 @@
+<div class="board_wrap view">
+    <h1>Board</h1>
+    <div class="board">
+        <table>
+            <colgroup>
+                <col class="col_width01" />
+                <col class="col_width02" />
+                <col class="col_width03" />
+                <col class="col_width04" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">Writer</th>
+                    <td>{{name}}</td>
+                    <th scope="row">Date</th>
+                    <td>{{date}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Title</th>
+                    <td colspan="3">
+                        <div class="view_tit">{{title}}</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Content</th>
+                    <td colspan="3">
+                        <div class="view_con">{{content}}</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn_wrap">
+            <a href="/" class="btn list">목록</a>
+            <a href="/board/edit/{{_id}}" class="btn edit">수정</a>
+            <form action="/board/{{_id}}?_id={{_id}}" method="post">
+                <input type="submit" value="삭제" class="btn delete">
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+/*
+    font-family:'Noto Sans KR', sans-serif;
+*/
+*{margin:0; padding:0;}
+.board_wrap{width:600px; margin:0 auto;}
+.board_wrap h1{padding:50px 0; text-align:center;}
+.board_wrap table{width:100%; border-collapse:collapse; border-spacing:0; line-height:30px; font-family:'Noto Sans KR', sans-serif; font-size:12px;}
+.board table input{vertical-align:middle;}
+.board table th{border-bottom:1px solid #999999; background:#eeeeee; padding:5px 0;}
+.board table td{border-bottom:1px solid #cccccc; padding:5px 0; text-align:center;}
+.board table td:nth-child(4){text-align:center;}
+.board table td:nth-child(4) .ellipsis{width:300px;}
+.board .ellipsis{overflow:hidden; display:block; white-space:nowrap; text-overflow:ellipsis;}
+
+.list .board table th:first-child,
+.list .board table td:first-child{display:none;}
+.list .col_width01{width:0px;}
+.list .col_width02{width:50px;}
+.list .col_width03{width:50px;}
+.list .col_width04{width:100px;}
+.list .col_width05{width:300px;}
+.list .col_width06{width:100px;}
+
+.view .view_tit{overflow:hidden; display:block; width:480px; padding:0 10px; white-space:nowrap; text-overflow:ellipsis; text-align:left;}
+.view .view_con{box-sizing:border-box; overflow:auto; width:100%; height:300px; padding:5px 10px; text-align:left;}
+
+.write .view_tit{padding:0 10px;}
+.write .view_tit input{box-sizing:border-box; width:100%; height:20px; outline:0 none;}
+.write .view_con{box-sizing:border-box; height:300px; padding:5px 10px; text-align:left;}
+.write .view_con textarea{box-sizing:border-box; overflow:auto; width:100%;height:100%; outline:0 none; resize:none;}
+
+.view .col_width01{width:100px;}
+.view .col_width02{width:200px;}
+.view .col_width03{width:100px;}
+.view .col_width04{width:200px;}
+.write .col_width01{width:100px;}
+.write .col_width02{width:200px;}
+.write .col_width03{width:100px;}
+.write .col_width04{width:200px;}
+
+.btn_wrap{width:100%; padding:10px 0; text-align:center;}
+.btn_wrap .btn{display:inline-block; height:30px; outline:0 none; border:1px solid transparent; background:#ffffff; padding:0 20px; line-height:28px; font-size:12px; cursor:pointer;}
+.btn.list{border-color:#009688; color:#0f645c;}
+.btn.list:hover{background:#aefff7;}
+.btn.confirm{border-color:#0255a5; color:#0255a5;}
+.btn.confirm:hover{background:#e5eef7;}
+.btn.submit{border-color:#f58220; color:#f58220;}
+.btn.submit:hover{background:#fff1de;}
+.btn.edit{border-color:#666666; color:#666666;}
+.btn.edit:hover{background:#eeeeee;}
+.btn.delete{border-color:#f6383d; color:#f6383d;}
+.btn.delete:hover{background:#ffe5e5;}

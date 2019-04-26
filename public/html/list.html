@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Board</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+        <link rel="stylesheet" href="board.css">
+    </head>
+    <body>
+        <div class="board_wrap list">
+            <h1>Board</h1>
+            <div class="board">
+                <table>
+                    <colgroup>
+                        <col class="col_width01" />
+                        <col class="col_width02" />
+                        <col class="col_width03" />
+                        <col class="col_width04" />
+                        <col class="col_width05" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Writer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <a href="#">zzzzzzzzzzzzz</a>
+                            </td>
+                            <td>2019-02-12</td>
+                            <td>
+                                <div class="ellipsis">윕스윕스윕스윕스윕스윕스윕스윕스</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <a href="#" class="ellipsis">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</a>
+                            </td>
+                            <td>2019-02-12</td>
+                            <td>
+                                <div class="ellipsis">윕스윕스윕스윕스윕스윕스윕스윕스</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_wrap">
+                    <button type="button" class="btn submit">글쓰기</button>
+                    <button type="button" class="btn delete">삭제</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="board.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<div class="board_wrap list">
+    <h1>Board</h1>
+    <div class="board">
+        <table>
+            <colgroup>
+                <col class="col_width01" />
+                <col class="col_width02" />
+                <col class="col_width03" />
+                <col class="col_width04" />
+                <col class="col_width05" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>No</th>
+                    <th>Writer</th>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>Title</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each board_list}}
+                    <tr>
+                        <td>{{_id}}</td>
+                        <td>{{idx}}</td>
+                        <td>
+                            <label for="{{_id}}">{{name}}</label>
+                        </td>
+                        <td><input type="checkbox" name="" id="{{_id}}" {{#if chkState}}checked{{/if}}></td>
+                        <td>
+                            <a href="./board/view/{{_id}}" class="ellipsis">{{title}}</a>
+                        </td>
+                        <td>{{date}}</td>
+                    </tr>
+                {{else}}
+                    <tr>
+                        <td>{{_id}}</td>
+                        <td colspan="6">No Contents!</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <div class="btn_wrap">
+            <a href="/board" class="btn submit">글쓰기</a>
+            <form action="/board/post?_method=delete" method="post">
+                <input type="submit" value="삭제" class="btn delete">
+            </form>
+        </div>
+    </div>
+</div>

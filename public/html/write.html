@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Board</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+        <link rel="stylesheet" href="board.css">
+    </head>
+    <body>
+        <div class="board_wrap write">
+            <h1>Board</h1>
+            <div class="board">
+                <table>
+                    <colgroup>
+                        <col class="col_width01" />
+                        <col class="col_width02" />
+                        <col class="col_width03" />
+                        <col class="col_width04" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Writer</th>
+                            <td>윕스</td>
+                            <th scope="row">Date</th>
+                            <td>2019-02-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Title</th>
+                            <td colspan="3">
+                                <div class="view_tit"><input type="text"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Content</th>
+                            <td colspan="3">
+                                <div class="view_con"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_wrap">
+                    <button type="button" class="btn confirm">확인</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="board.js"></script>
+    </body>
+</html>
