@@ -32,7 +32,8 @@
         <div class="btn_wrap">
             <a href="/" class="btn list">목록</a>
             <a href="/board/edit/{{_id}}" class="btn edit">수정</a>
-            <form action="/board/{{_id}}?_id={{_id}}" method="post">
+            <form action="/board/del?_method=delete" method="get">
+                <input type="hidden" name="_id" value="{{_id}}">
                 <input type="submit" value="삭제" class="btn delete">
             </form>
         </div>
